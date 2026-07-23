@@ -529,7 +529,7 @@ def resolve_product_url(product):
 
 
 def load_product_settings():
-    return load_json(PRODUCT_SETTINGS_FILE, {"default_page_id":"1076514822219251", "product_lines":{}})
+    return load_json(PRODUCT_SETTINGS_FILE, {"default_page_id":"", "product_lines":{}})
 
 
 def normalize_product_name(product):
@@ -1036,7 +1036,7 @@ def send_budget_template(handler):
     handler.wfile.write(payload)
 
 def get_defaults():
-    d={"enabled":"Y","daily_budget":"100","page_id":"1076514822219251","lead_form_id":"","website_url":"","cta_type":"GET_QUOTE","language_mode":"auto","custom_language":"","dry_run":"no","delay_max_seconds":"60","ad_account_id":"1682488829626268","url_tags":"utm_source=facebook&utm_medium=socialad&utm_campaign=fjd-{产品名}&utm_id=5224"}
+    d={"enabled":"Y","daily_budget":"100","page_id":"","lead_form_id":"","website_url":"","cta_type":"GET_QUOTE","language_mode":"auto","custom_language":"","dry_run":"no","delay_max_seconds":"60","ad_account_id":"","url_tags":"utm_source=facebook&utm_medium=socialad&utm_campaign=fjd-{产品名}&utm_id=5224"}
     if PLAN_FILE.exists():
         try:
             wb=load_workbook(PLAN_FILE, read_only=True, data_only=True); ws=wb["广告主表"] if "广告主表" in wb.sheetnames else wb[wb.sheetnames[0]]

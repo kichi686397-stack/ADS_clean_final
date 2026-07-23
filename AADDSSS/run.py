@@ -210,7 +210,7 @@ def language_name_for_ad(row, countries=None):
 
 
 def load_product_settings():
-    return load_json(Path(PRODUCT_SETTINGS_FILE), {"default_page_id": "1076514822219251", "product_lines": {}})
+    return load_json(Path(PRODUCT_SETTINGS_FILE), {"default_page_id": "", "product_lines": {}})
 
 
 def product_line_for_product(product):

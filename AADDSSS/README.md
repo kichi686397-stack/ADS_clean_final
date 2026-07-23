@@ -77,19 +77,8 @@ ADS/
 ```
 
 ## 新增受众
-Scanner 产品线已加入 Saved Audience：
 
-```text
-Trion-scanner = 52532458508367
-```
-
-默认映射：
-
-- MC：EG10 / EC100 / GC100 / DC100 / SG10 / TerraMind → `52526817191967`
-- RTK：V10L / V10a / V10i / V1t / V1t 5W / V4e Pro → `52529608539367`
-- Scanner：P1 / P2 / P2 Vision+ / S1 / S2 / V4e / Model Web → `52532458508367`
-
-Scanner 受众已写入 `_cache/saved_audience_cache.json`，会按计划里的国家覆盖原 Saved Audience 的地区。
+Saved Audience ID 属于本地投放配置，不保存在公开仓库中。请在 `config/audiences.json` 中配置 MC、RTK 和 Scanner 产品线对应的 Saved Audience；运行时生成的受众缓存位于 `_cache/saved_audience_cache.json`。
 
 ## 预算预警、素材疲劳与经营报表
 
