@@ -1,0 +1,3 @@
+整理版：配置文件移动到 config/；PowerShell 脚本移动到 scripts/；Scanner 受众更新为 Trion-scanner 52532458508367。
+
+2026-07-07 清理：删除根目录 images/；代码默认只读取 素材包/；保留 config/_cache/日志/scripts。
